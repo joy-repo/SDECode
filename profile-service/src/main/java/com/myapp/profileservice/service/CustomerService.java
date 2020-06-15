@@ -1,8 +1,8 @@
 package com.myapp.profileservice.service;
 
-import com.krishantha.rentcloud.commons.model.Customer;
-
 import java.util.List;
+
+import com.myapp.profileservice.model.Customer;
 
 public interface CustomerService {
 

@@ -1,13 +1,13 @@
 package com.myapp.profileservice.service;
 
-import com.krishantha.rentcloud.commons.model.Customer;
-import com.myapp.profileservice.repository.CustomerRepository;
+import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.myapp.profileservice.model.Customer;
+import com.myapp.profileservice.repository.CustomerRepository;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {

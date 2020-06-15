@@ -1,13 +1,17 @@
 package com.myapp.profileservice.controller;
 
-import com.krishantha.rentcloud.commons.model.Customer;
-import com.myapp.profileservice.service.CustomerService;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.myapp.profileservice.model.Customer;
+import com.myapp.profileservice.service.CustomerServiceImpl;
 
 @RestController
 @RequestMapping(value = "/services")
@@ -15,7 +19,7 @@ public class ProfileController {
 
 
     @Autowired
-    CustomerService customerService;
+    CustomerServiceImpl customerService;
 
     @RequestMapping(value = "/customers", method = RequestMethod.POST)
     @PreAuthorize("hasAuthority('create_profile')")

@@ -1,8 +1,5 @@
 package com.myapp.rentui.controller;
 
-import com.krishantha.rentcloud.commons.model.Customer;
-import com.myapp.rentui.config.AccessToken;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.http.HttpEntity;
@@ -16,6 +13,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
+
+import com.myapp.rentui.config.AccessToken;
+import com.myapp.rentui.model.Customer;
 
 @Controller
 @EnableOAuth2Sso

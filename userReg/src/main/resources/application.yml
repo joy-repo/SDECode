@@ -2,7 +2,7 @@ server:
   port: 8787
 spring:
   datasource:
-    url: jdbc:mysql://sde-mysql-public:3306/myDB?createDatabaseIfNotExist=true
+    url: jdbc:mysql://35.193.152.101:3306/myDBn?createDatabaseIfNotExist=true
     username: root
     password: root@123
     driver-class-name: com.mysql.jdbc.Driver

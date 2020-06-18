@@ -66,7 +66,7 @@ public class UserService {
 		reg.setToken(uuid);
 		reg.setUserId(u.getId());
 		reg.setEnabled(true);
-		String message = "localhost:8787/confirm/" + uuid;
+		String message = "ec2-3-16-25-211.us-east-2.compute.amazonaws.com:8787/confirm/" + uuid;
 		System.out.println(message);
 
 		sendEmail(u.getEmail(), message);

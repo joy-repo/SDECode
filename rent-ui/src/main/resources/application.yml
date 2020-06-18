@@ -4,10 +4,10 @@ security:
     client:
       client-id: mobile
       client-secret: pin
-      user-authorization-uri: http://localhost:9191/oauth/authorize
-      access-token-uri: http://localhost:9191/oauth/token
+      user-authorization-uri: http://ec2-18-218-236-176.us-east-2.compute.amazonaws.com:9191/oauth/authorize
+      access-token-uri: http://ec2-18-218-236-176.us-east-2.compute.amazonaws.com:9191/oauth/token
     resource:
-      token-info-uri: http://localhost:9191/oauth/check_token
+      token-info-uri: http://ec2-18-218-236-176.us-east-2.compute.amazonaws.com:9191/oauth/check_token
 server:
   servlet:
     session:
